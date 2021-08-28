@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>STOCK PRICE PREDICTION</title>
+</head>
+<body>
+<h1>NETFLIX STOCK PRICE PREDICTION</h1>
+  <form action="http://127.0.0.1:5000/predictions", method='post'>
+  <div class="container">
+      <div class="row">
+		<div class="col-25">
+			<label for="Date">START DATE</label>
+		</div>
+		
+		<div class="col-75">
+			<input type="datetime" name="START DATE">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class = "col-25">
+			<label>Date Format:{DD/MM/YY}<label>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class = "col-25">
+			<label>-=-=-=-=-=-=-=-=-=-=<label>
+		</div>
+	</div>
+	
+	<div class="container">
+      <div class="row">
+		<div class="col-25">
+			<label>HIGH PRICE</label>
+		</div>
+		
+		<div class="col-75">
+			<input type="float" name="HIGH PRICE">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class = "col-25">
+			<label>-=-=-=-=-=-=-=-=-=-=<label>
+		</div>
+	</div>
+	
+	<div class="container">
+      <div class="row">
+		<div class="col-25">
+			<label>LOW PRICE</label>
+		</div>
+		
+		<div class="col-75">
+			<input type="float" name="LOW PRICE">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class = "col-25">
+			<label>-=-=-=-=-=-=-=-=-=-=<label>
+		</div>
+	</div>
+	
+	<div class="container">
+      <div class="row">
+		<div class="col-25">
+			<label>OPEN PRICE</label>
+		</div>
+		
+		<div class="col-75">
+			<input type="float" name="OPEN PRICE">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class = "col-25">
+			<label>-=-=-=-=-=-=-=-=-=-=<label>
+		</div>
+	</div>
+	
+    <div class="row">
+      <input type="submit" value="SUBMIT">
+    </div>
+	
+	<div class="row">
+		<div class = "col-25">
+			<label for="prediction">Prediction: {{prediction_output}} </label>
+		</div>
+	</div>
+	
+  </form>
+</div>
+</body>
+<html>
